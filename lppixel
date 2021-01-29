@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript">
+function bemobCb(params) {
+    var t = params.trackingDomain+'/click/';
+    var re = new RegExp(t+'?(\\d*)');
+    var e = document.querySelectorAll('a[href*="'+t+'"]');
+    for (var i = 0; i < e.length; i++) {
+        var ex = re.exec(e[i].href);
+        if (ex) {
+            e[i].href = params.ctaSecureUrl.replace('%%OFFER_NUMBER%%', ex[1] || 1);
+        }
+    }
+}
+</script>
+<script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://m6i3b.click.bemobcloud.com/landing/39c05d92-2941-43e6-9c18-032b4d50de47?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script><noscript><img src="https://m6i3b.click.bemobcloud.com/landing/39c05d92-2941-43e6-9c18-032b4d50de47?rule=1&path=1&landing=1" alt=""></noscript>
+    <title>BeMob Simple Landing</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <script>
+        function getParameterByName(name, defaultValue) {
+            if (!defaultValue) {
+                defaultValue = '';
+            }
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(window.location.href);
+            if (!results) return defaultValue;
+            if (!results[2]) return defaultValue;
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">BeMob Simple Landing</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            <h1>BeMob Simple Landing</h1>
+            <p>
+                <a href="https://m6i3b.click.bemobcloud.com/click/1?ns=c%3D39c05d92-2941-43e6-9c18-032b4d50de47..l%3D121372fb-a1df-4d88-8636-45d51fb42fe6..a%3D0..b%3D0" class="btn btn-success">Click me!</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
