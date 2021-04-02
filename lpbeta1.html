@@ -1,0 +1,24 @@
+<div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            <h1>BeMob Simple Landing</h1>
+            <p>Special offer for <script>document.write(getParameterByName('p1'))</script> users</p>
+            <h1>BeMob Simple Landing</h1>  
+    <script type="text/javascript">
+function bemobCb(params) {
+    var t = params.trackingDomain+'/click/';
+    var re = new RegExp(t+'?(\\d*)');
+    var e = document.querySelectorAll('a[href*="'+t+'"]');
+    for (var i = 0; i < e.length; i++) {
+        var ex = re.exec(e[i].href);
+        if (ex) {
+            e[i].href = params.ctaSecureUrl.replace('%%OFFER_NUMBER%%', ex[1] || 1);
+        }
+    }
+}
+</script>
+<script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://go.insoundtrack.com/landing/f41176dd-4ce7-4b33-9775-4e6cf0875080?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script><noscript><img src="https://go.insoundtrack.com/landing/f41176dd-4ce7-4b33-9775-4e6cf0875080?rule=1&path=1&landing=1" alt=""></noscript>
+            <p>
+                <a href="https://go.insoundtrack.com/click/1?ns=c%3Df41176dd-4ce7-4b33-9775-4e6cf0875080..l%3Da0585970-4266-429a-8c30-a3645dd6a1bc..a%3D0..b%3D0" class="btn btn-success">Click me!</a>
+            </p>
+        </div>
+    </div>
