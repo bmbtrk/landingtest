@@ -1,34 +1,37 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Sample Lander</title>
-  
+    <title>BeMob Simple Landing</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+     <script>
     function getURLParameter(name) {
         return decodeURI(
             (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
         );
     }
     </script>
-
 </head>
+
 <body>
-    <div class="container text-center" style="margin-top:100px;">
-        <div class="row">
-            <div class="jumbotron text-center">
-                <h1>
-                    Sample Landing Page
-                </h1>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">BeMob Simple Landing</a>
             </div>
         </div>
-        <div class="row lead">
-            This is a sample landing page. Click the button below to navigate to your offer.
-        </div>
-        <div class="row">
-            <script>
-                document.write('<a class="btn btn-lg btn-success" href="https://' + getURLParameter('trackingdomain') + '/click" role="button">Click Here</a>')
+    </nav>
+
+ <script>
+                document.write('<a class="btn btn-lg btn-success" href="http://' + getURLParameter('trackingdomain') + '/click" role="button">Click Here</a>')
             </script>
-        </div>
-    </div>
 </body>
+
 </html>
