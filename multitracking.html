@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BeMob Simple Landing</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+     <script>
+    function getURLParameter(name) {
+        return decodeURI(
+            (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
+        );
+    }
+    </script>
+</head>
+
+<body>
+
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            <h1>BeMob Simple Landing</h1>
+     <script>
+document.write('<a class="btn btn-lg btn-success" href="https://' + getURLParameter('domain') + '/click/1" role="button">Click Here</a>')
+    </script>
+
+     <script>
+document.write('<a class="btn btn-lg btn-success" href="https://' + getURLParameter('domain') + '/click/2" role="button">Click Here</a>')
+    </script>
+
+     <script>
+document.write('<a class="btn btn-lg btn-success" href="https://' + getURLParameter('domain') + '/click/3" role="button">Click Here</a>')
+    </script>
+</body>
+
+</html>
